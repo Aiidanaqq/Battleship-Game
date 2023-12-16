@@ -1,4 +1,4 @@
-Rules of the game:
+RULES OF THE GAME:
 1. Purpose of the game: Sink all ships on the playing field.
 2. Playing field: The field is a 7x7 square. The ships are placed randomly and occupy several cells.
 3. Ships:
@@ -10,9 +10,10 @@ Rules of the game:
    • If the shot is repeated into the cell where the previous shot was, the message "Sunk! Continue.." is displayed, and the player can continue the game.
 5. End of the game:
    • The game ends when all ships are sunk.
-   • After completing the game, congratulations and the number of shots taken are displayed.
+   • After completing the game, congratulations and the number of shots taken are displayed
+   
 
-   Methods used:
+METHODS USED:
 1. "initializeBoard()" - Initialize the board:
    • Fills the playing field with empty cells.
    • Places ships on the board according to given rules.
@@ -26,8 +27,9 @@ Rules of the game:
    • Initializes the board and variables.
    • Invites the player to make moves, displaying the state of the board after each move.
    • Ends the game and congratulates the player after all ships have been sunk.
+   
 
-   General course of the game:
+GENERAL COURSE OF THE GAME:
 1. Entering the player name:
    • The player enters his name.
 2. Initialization and start of the game:
