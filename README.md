@@ -14,16 +14,19 @@ RULES OF THE GAME:
    
 
 METHODS USED:
-1. "initializeBoard()" - Initialize the board:
+1. "const int boardSize = 7;" - Sets the size of the playing field.
+2. "char board[boardSize] [boardSize];" - Declares a two-dimensional array to represent the game field.
+3. "struct Player" - Defines a simple structure for storing player information.
+4. "initializeBoard()" - Initialize the board:
    • Fills the playing field with empty cells.
    • Places ships on the board according to given rules.
-2. "printBoard()" - Display the board on the screen:
+5. "printBoard()" - Display the board on the screen:
    • Displays the current state of the playing field.
-3. "isValidMove (int row, int col)" - Checking the validity of a move:
+6. "isValidMove (int row, int col)" - Checking the validity of a move:
    • Checks that the entered coordinates are within the board and the cell is free.
-4. "isGameOver()" - Checking the end of the game:
+7. "isGameOver()" - Checking the end of the game:
    • Checks if all ships are sunk, returning "true" if the board does not contain any ships.
-5. "playGame (const string& playerName)" - Main game loop:
+8. "playGame (const string& playerName)" - Main game loop:
    • Initializes the board and variables.
    • Invites the player to make moves, displaying the state of the board after each move.
    • Ends the game and congratulates the player after all ships have been sunk.
