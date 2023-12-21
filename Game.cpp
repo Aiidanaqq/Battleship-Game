@@ -6,7 +6,7 @@
  
 using namespace std; 
  
-const int boardSize = 6; 
+const int boardSize = 7; 
 char board[boardSize][boardSize]; 
 int shipHits = 0; 
 int totalShots = 0; 
@@ -24,13 +24,12 @@ void initializeBoard() {
  
     int x, y; 
  
-    // Place a ship of length 3 
     x = rand() % (boardSize - 2); 
     y = rand() % boardSize; 
     for (int i = 0; i < 3; i++) 
         board[x + i][y] = 'S'; 
  
-    // Place two ships of length 2 
+
     for (int i = 0; i < 2; i++) { 
         x = rand() % boardSize; 
         y = rand() % (boardSize - 1); 
@@ -38,7 +37,7 @@ void initializeBoard() {
             board[x][y + j] = 'S'; 
     } 
  
-    // Place four ships of length 1 
+   
     for (int i = 0; i < 4; i++) { 
         do { 
             x = rand() % boardSize; 
